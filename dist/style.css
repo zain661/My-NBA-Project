@@ -1,6 +1,4 @@
 #container{
-    /* width: 100vh;
-    height: 100vh; */
     padding: 20px;
 }
 body{
@@ -11,7 +9,6 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr) ;
     grid-template-areas: "p""p""p";
-    /* padding: 40px; */
     column-gap: 10px;
     row-gap: 10px;
 
@@ -24,7 +21,6 @@ body{
    
     grid-area: 'p';
     background-color: red;
-    /* height: 30%; */
     text-align:center;
     
 }

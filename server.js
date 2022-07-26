@@ -6,9 +6,9 @@ const port = 5000
 let players = []
 app.use(express.static((path.join(__dirname, "dist"))))
 app.use(express.static((path.join(__dirname, "node_modules"))))
-// app.get('/',function(req,res){
-//     res.send("hiiiii")
-// })
+app.get('/',function(req,res){
+    res.send("this is home page")
+})
 const teamToIDs = {
     "lakers": "1610612747",
     "warriors": "1610612744",
@@ -27,5 +27,5 @@ axios.get('http://data.nba.net/10s/prod/v1/2018/players.json')
   players= res['data']['league']['standard']
   })
 app.listen(port,function(){
-    console.log("kkkkkkkkk")
+    // console.log("")
 })
