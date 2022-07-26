@@ -19,7 +19,7 @@ app.get('/teams/:teamName',function(req,res){
     const name = req.params.teamName
     let result = []
     result = players.filter(p=>p.teamId == teamToIDs[name])
-    res.send(players)
+    res.send(result)
     
 })
 axios.get('http://data.nba.net/10s/prod/v1/2018/players.json')
